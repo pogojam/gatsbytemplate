@@ -1,16 +1,12 @@
-require('dotenv').config();
-const {db,apollo} = require('./src/backend/setup/')
-const setup = require('./src/backend/setup/')
-const bodyParser = require('body-parser')
-const cookieSession = require('cookie-session')
-const passport =  require('passport')
-const routes = require('./src/backend/routes')
-
-console.log(setup);
-
+require("dotenv").config()
+const { db, apollo } = require("./src/backend/setup/")
+const setup = require("./src/backend/setup/")
+const bodyParser = require("body-parser")
+const cookieSession = require("cookie-session")
+const passport = require("passport")
+const routes = require("./src/backend/routes")
 
 exports.onCreateDevServer = ({ app }) => {
-
   db.init()
 
   // Middleware
@@ -27,5 +23,4 @@ exports.onCreateDevServer = ({ app }) => {
   app.use(passport.initialize())
   app.use(passport.session())
   app.use("/auth", routes.auth)
-  apollo.applyMiddleware({ app, path: "/api" })
 }

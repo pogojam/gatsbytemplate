@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from "react"
+import { ApolloProvider } from "react-apollo"
+import { Provider } from "unstated"
+import client from "./src/backend/setup/apolloClient"
 
-// You can delete this file if you're not using it
+export const wrapRootElement = ({ element }) => (
+  <Provider>
+    <ApolloProvider client={client}>{element}</ApolloProvider>
+  </Provider>
+)
