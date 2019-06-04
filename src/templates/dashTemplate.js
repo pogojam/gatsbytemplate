@@ -1,7 +1,5 @@
 const Dash = [
-  [
-    //    insert array template
-  ],
+  [[0, 2, 2, 2], [1, 2, 2, 2], [1, 2, 2, 2], [1, 2, 2, 2]],
   [
     // next version template
   ],

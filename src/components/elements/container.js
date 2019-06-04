@@ -19,8 +19,17 @@ import {
   gridTemplateRows,
   gridTemplateColumns,
   gridTemplateAreas,
+  gridGap,
   position,
   borderBottom,
+  alignItems,
+  alignContent,
+  zIndex,
+  top,
+  right,
+  bottom,
+  left,
+  borderRadius,
 } from "styled-system"
 
 const cssFlexCenter = css`
@@ -34,12 +43,18 @@ const cssFlexLeft = css`
   align-items: left;
   display: flex;
 `
-const cssGrid = css`
-  display: grid;
-`
 
 const Container = styled.div`     
+
+  /* Component kinds */
+
+  ${({ cssFlexLeft }) => cssFlexLeft}
+  ${({ cssFlexRight }) => cssFlexRight}
+
+
+
         ${display}
+        ${gridGap}
         ${gridArea}
         ${gridRow}
         ${gridColumn}
@@ -49,11 +64,11 @@ const Container = styled.div`
         ${gridTemplateColumns}
         ${gridTemplateAreas}
         ${background}
+        ${borderRadius}
         ${space}
         ${flex}
         ${justifyItems}
         ${justifyContent}
-        ${background}
         ${minHeight}
         ${minWidth}
         ${maxWidth}
@@ -61,6 +76,13 @@ const Container = styled.div`
         ${color}
         ${position}
         ${borderBottom}
+        ${alignItems}
+        ${top}
+  ${right}
+  ${bottom}
+  ${left}
+  ${alignContent}
+        ${({ CSS }) => CSS}
 `
 
 export default Container

@@ -1,12 +1,12 @@
 import React from "react"
-import { Container, Header } from "../elements"
-import { Link } from "gatsby"
+import { Container, Header,Button } from "../elements"
 
-const Button = ({ name, to }) => (
-  <Link to={to}>
-    <Header.h3>{name}</Header.h3>
-  </Link>
-)
+
+// const AuthContainer = styled(Container)`
+//     position:absolute;
+//     left:0;
+// `
+
 
 const Nav = props => (
   <Container {...props}>
