@@ -6,7 +6,7 @@
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
         "@emotion/core": "^10.0.10",
-        "@graphql-modules/core": "^0.7.5",
+        "@graphql-modules/core": "^0.7.17",
         "animate.css": "^3.7.1",
         "apollo-cache-inmemory": "^1.6.0",
         "apollo-client": "^2.6.0",
