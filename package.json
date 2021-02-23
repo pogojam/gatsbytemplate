@@ -6,7 +6,7 @@
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
         "@emotion/core": "^10.0.10",
-        "@graphql-modules/core": "^0.7.5",
+        "@graphql-modules/core": "^0.7.14",
         "animate.css": "^3.7.1",
         "apollo-cache-inmemory": "^1.6.0",
         "apollo-client": "^2.6.0",
@@ -30,7 +30,7 @@
         "graphql-iso-date": "^3.6.1",
         "graphql-tools": "^4.0.4",
         "intersection-observer": "^0.7.0",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.21",
         "mongoose": "^5.5.11",
         "particles.js": "^2.0.0",
         "passport": "^0.4.0",
