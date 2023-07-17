@@ -31,7 +31,7 @@
         "graphql-tools": "^4.0.4",
         "intersection-observer": "^0.7.0",
         "lodash": "^4.17.11",
-        "mongoose": "^5.5.11",
+        "mongoose": "^5.13.20",
         "particles.js": "^2.0.0",
         "passport": "^0.4.0",
         "passport-facebook": "^3.0.0",
